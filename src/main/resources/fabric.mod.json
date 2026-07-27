@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "meteor-rcc-spam-addon",
+  "version": "${version}",
+  "name": "Popbob addon",
+  "description": "Popbob sex exploit",
+  "authors": [
+    "elijah"
+  ],
+  "contact": {},
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.example.addon.Addon"
+    ]
+  },
+  "mixins": [
+    "rcc-spam-addon.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "0,200,255",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "~${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
